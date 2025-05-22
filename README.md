@@ -29,7 +29,7 @@ A modern card management web application built with Vue 3, TypeScript, and Vuex.
 
 1. Clone the repository
 ```bash
-git clone https://github.com/yourusername/aspire-app.git
+git clone https://github.com/SohnaSajeevan/aspire_app.git
 cd aspire-app
 ```
 

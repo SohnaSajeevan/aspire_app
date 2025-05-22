@@ -32,7 +32,6 @@
 .btn-add-card {
   background-color: #325baf !important;
   color: #ffffff !important;
-  padding: 10px 12px !important;
   border-radius: 4px !important;
   font-weight: 600 !important;
   font-size: 14px !important;
@@ -150,6 +149,12 @@
 }
 .accordion-button::after {
   display: none;
+}
+.accordion-button:not(.collapsed) .arrow-icon {
+  transform: rotate(180deg);
+}
+.arrow-icon {
+  transition: transform 0.3s ease;
 }
 .accordion-header .accordion-button {
   background-color: #f5f9ff;

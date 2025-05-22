@@ -1,7 +1,10 @@
 <template>
   <div class="transaction-list">
     <!-- Loading state -->
-    <div v-if="isLoading" class="transaction-loading">
+    <div
+      v-if="isLoading"
+      class="d-flex align-items-center justify-content-center p-3"
+    >
       <div class="spinner-border spinner-border-sm text-primary">
         <span class="visually-hidden">Loading...</span>
       </div>
@@ -14,9 +17,8 @@
     </div>
 
     <!-- Empty state -->
-    <div v-else-if="transactions.length === 0" class="transaction-empty">
-      <i class="bi bi-credit-card text-muted"></i>
-      <p>No transactions found</p>
+    <div v-else-if="transactions.length === 0" class="transaction-empty pt-3">
+      <p class="text-muted text-center">No transactions found!!!</p>
     </div>
 
     <!-- Transactions list -->
@@ -29,24 +31,28 @@
         >
           <div class="d-flex align-items-start gap-3">
             <div
-            class="transaction-icon"
-            :class="getCategoryClass(transaction.category)"
-          >
-            <img
-              :src="`src/assets/${getCategoryIcon(transaction.category)}.svg`"
-              alt="category icon"
-            />
-          </div>
-          <div class="transaction-details">
-            <div class="merchant mb-1">{{ transaction.merchant }}</div>
-            <div class="date">{{ transaction.date }}</div>
-            <div class="transaction-description d-flex align-items-center gap-2">
-              <div class="transaction-description-icon">
-                <img src="../../assets/finance.svg" alt="credit-card" />
-              </div>
-              <span class="transaction-description-text">{{ transaction.description }}</span>
+              class="transaction-icon"
+              :class="getCategoryClass(transaction.category)"
+            >
+              <img
+                :src="`src/assets/${getCategoryIcon(transaction.category)}.svg`"
+                alt="category icon"
+              />
             </div>
-          </div>
+            <div class="transaction-details">
+              <div class="merchant mb-1">{{ transaction.merchant }}</div>
+              <div class="date">{{ transaction.date }}</div>
+              <div
+                class="transaction-description d-flex align-items-center gap-2"
+              >
+                <div class="transaction-description-icon">
+                  <img src="../../assets/finance.svg" alt="credit-card" />
+                </div>
+                <span class="transaction-description-text">{{
+                  transaction.description
+                }}</span>
+              </div>
+            </div>
           </div>
           <div
             class="transaction-amount d-flex align-items-center"
@@ -57,11 +63,17 @@
           >
             {{ transaction.amount > 0 ? "+" : "-" }} {{ getCurrencySymbol() }}
             {{ Math.abs(transaction.amount) }}
-            <img src="../../assets/arrow-right.svg" alt="arrow-right" class="arrow-right" />
+            <img
+              src="../../assets/arrow-right.svg"
+              alt="arrow-right"
+              class="arrow-right"
+            />
           </div>
         </div>
       </div>
-      <div class="view-all-transactions d-flex align-items-center justify-content-center">
+      <div
+        class="view-all-transactions d-flex align-items-center justify-content-center"
+      >
         View all card transactions
       </div>
     </div>

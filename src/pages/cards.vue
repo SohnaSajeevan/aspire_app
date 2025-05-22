@@ -26,8 +26,9 @@
               formatCurrency(currentCard?.availableBalance || 0)
             }}</span>
           </div>
-          <button class="btn btn-add-card" @click="openAddCardModal">
-            <i class="bi bi-plus-circle"></i> New card
+          <button class="btn btn-add-card d-flex align-items-center" @click="openAddCardModal">
+            <img src="../assets/box.svg" alt="plus-circle" class="me-2" /> 
+            <span>New card</span>
           </button>
         </div>
       </div>
@@ -147,7 +148,7 @@
                         />
                         <span>Card details</span>
                       </div>
-                      <img src="../assets/arrow-down.svg" alt="arrow-down" />
+                      <img src="../assets/arrow-down.svg" alt="arrow-down" class="arrow-icon" />
                     </button>
                   </h2>
                   <div
@@ -178,7 +179,7 @@
                         />
                         <span>Recent transactions</span>
                       </div>
-                      <img src="../assets/arrow-down.svg" alt="arrow-down" />
+                      <img src="../assets/arrow-down.svg" alt="arrow-down" class="arrow-icon" />
                     </button>
                   </h2>
                   <div
