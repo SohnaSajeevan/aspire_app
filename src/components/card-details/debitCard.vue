@@ -37,7 +37,7 @@
     </div>
 
     <div class="card-network d-flex justify-content-end">
-      <img :src="`../../assets/${cardName}.svg`" alt="visa" />
+      <img :src="`/assets/${cardName}.svg`" alt="visa" />
     </div>
   </div>
 </template>
