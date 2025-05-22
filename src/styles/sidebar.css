@@ -1,0 +1,27 @@
+.sidebar-wrapper {
+  width: 340px;
+  height: 100vh;
+  background-color: #0c365a;
+  color: #fff;
+  padding: 48px;
+}
+.logo-wrapper {
+  margin-bottom: 50px;
+}
+.logo-text {
+  margin: 19px 0;
+  color: #ffffff;
+  opacity: 30%;
+  font-size: 15px;
+}
+.menu-item {
+  margin: 31px 0;
+  font-size: 18px;
+}
+.menu-item p {
+  color: #ffffff;
+}
+.menu-item .router-link-exact-active p {
+  color: #01d167;
+  font-weight: 600;
+}

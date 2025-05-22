@@ -1,0 +1,290 @@
+.page-wrapper {
+  padding: 60px;
+  height: 100vh; 
+  overflow-y: auto;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+}
+.page-wrapper::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+.balance-section {
+  margin-bottom: 34px;
+}
+.balance-label {
+  font-size: 16px;
+  color: #222222;
+  margin-bottom: 16px;
+}
+.badge-icon {
+  background-color: #01d167;
+  padding: 4px 13px !important;
+  border-radius: 4px !important;
+  color: #ffffff !important;
+  font-size: 15px !important;
+  margin-right: 12px;
+}
+.balance-amount {
+  font-size: 24px;
+  color: #222222;
+  font-weight: 600;
+}
+.btn-add-card {
+  background-color: #325baf !important;
+  color: #ffffff !important;
+  padding: 10px 12px !important;
+  border-radius: 4px !important;
+  font-weight: 600 !important;
+  font-size: 14px !important;
+}
+.card-tabs .nav-link {
+  margin-bottom: 16px;
+  font-size: 14px;
+  color: #222222;
+  opacity: 30%;
+}
+.card-tabs .nav-link.active {
+  color: #222222;
+  font-weight: 600;
+  opacity: 100%;
+  border-bottom: 3px solid #23cefd !important;
+}
+.card-details-container {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 40px;
+  box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.1);
+  margin-top: 16px;
+}
+.show-card-number {
+  font-size: 14px;
+  color: #01d167;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+.show-card-number img {
+  margin-right: 6px;
+}
+.card-list {
+  margin-right: 46px;
+}
+.debit-card {
+  width: 100%;
+  background-color: #01d167;
+  border-radius: 12px;
+  padding: 27px;
+  cursor: pointer;
+}
+.debit-card.frozen {
+  opacity: 0.5;
+}
+.debit-card .card-logo {
+  margin-bottom: 27px;
+}
+.debit-card .card-holder-name {
+  font-size: 24px;
+  color: #ffffff;
+  font-weight: 600;
+  margin-bottom: 27px;
+}
+.debit-card .card-number {
+  font-size: 18px;
+  color: #ffffff;
+  font-weight: 600;
+  margin-bottom: 17px;
+}
+.card-details {
+  font-size: 14px;
+  color: #ffffff;
+  font-weight: 600;
+  margin-bottom: 7px;
+}
+.card-details .expiry {
+  margin-right: 36px;
+}
+.card-details .cvv {
+  position: relative;
+}
+.card-details .cvv .cvv-number {
+  position: absolute;
+  left: 40px;
+  top: 0px;
+}
+.cvv-number span {
+  font-size: 18px;
+  color: #ffffff;
+  font-weight: 600;
+}
+.card-number .dot {
+  width: 9px;
+  height: 9px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  margin-right: 6px;
+}
+.card-number .number-container {
+  margin-right: 12px;
+}
+.card-actions-wrapper {
+  display: flex;
+  align-items: center;
+  border-radius: 16px;
+  padding: 20px 27px;
+  background-color: #edf3ff;
+  gap: 30px;
+}
+.card-actions-wrapper .card-action-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  cursor: pointer;
+}
+.card-action-item .action-text {
+  font-size: 12px;
+  color: #0c365a;
+  text-align: center;
+}
+.accordion-item {
+  border: 1px solid #f5f5f5 !important;
+}
+.accordion-button::after {
+  display: none;
+}
+.accordion-header .accordion-button {
+  background-color: #f5f9ff;
+  padding: 26px 24px;
+  border-radius: 8px !important;
+  color: #0c365a;
+  font-size: 14px;
+  border: none !important;
+  box-shadow: 0px 0px 10.67px rgba(0, 0, 0, 0.15);
+}
+.accordion-header .title-section {
+  gap: 12px;
+}
+.accordion-header .accordion-button:not(.collapsed) {
+  background-color: #f5f9ff;
+}
+.transaction-items-container {
+  padding: 24px;
+}
+.transaction-item {
+  display: flex;
+  align-items: start;
+  padding: 18px;
+  border-bottom: 1px solid #f5f5f5;
+}
+.transaction-item:last-child {
+  border-bottom: none;
+}
+.transaction-item .transaction-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 48px;
+  width: 48px;
+  border-radius: 50%;
+}
+.transaction-icon.category-shopping {
+  background-color: #009dff1a;
+}
+.transaction-icon.category-travel {
+  background-color: #00d6b51a;
+}
+.transaction-icon.category-marketing {
+  background-color: #f251951a;
+}
+.transaction-details .merchant {
+  font-size: 14px;
+  color: #222222;
+  font-weight: 600;
+}
+.transaction-details .date {
+  font-size: 14px;
+  color: #aaaaaa;
+  margin-bottom: 10px;
+}
+.transaction-description .transaction-description-icon {
+  width: 24px;
+  height: 20px;
+  background-color: #325baf;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.transaction-description .transaction-description-text {
+  font-size: 14px;
+  color: #325baf;
+  font-weight: 500;
+}
+.transaction-amount {
+  font-size: 14px;
+  color: #222222;
+  font-weight: 600;
+}
+.transaction-amount.positive {
+  color: #01d167;
+}
+.transaction-amount .arrow-right {
+  margin-left: 10.5px;
+}
+.view-all-transactions {
+  font-size: 15px;
+  color: #01D167;
+  font-weight: 600;
+  padding: 16px;
+  background-color: #EDFFF5;
+}
+
+/* Card Carousel Styling */
+.card-navigation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.card-nav-btn {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #fff;
+  border: 1px solid #eee;
+  color: #01d167;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.card-nav-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.card-indicators {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 15px;
+}
+
+.card-indicator {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #ddd;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.card-indicator.active {
+  width: 16px;
+  height: 8px;
+  border-radius: 4px;
+  background-color: #01d167;
+}
