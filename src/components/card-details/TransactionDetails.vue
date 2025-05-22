@@ -35,7 +35,7 @@
               :class="getCategoryClass(transaction.category)"
             >
               <img
-                :src="`src/assets/${getCategoryIcon(transaction.category)}.svg`"
+                :src="`assets/${getCategoryIcon(transaction.category)}.svg`"
                 alt="category icon"
               />
             </div>
@@ -101,11 +101,8 @@ export default defineComponent({
       const icons: Record<string, string> = {
         shopping: "bag",
         travel: "airplane",
-        food: "cup-hot",
-        entertainment: "film",
         marketing: "megaphone",
         utilities: "lightning",
-        transport: "car-front",
       };
 
       return icons[category] || "credit-card";
