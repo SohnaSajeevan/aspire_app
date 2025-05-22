@@ -102,7 +102,6 @@ export default defineComponent({
         shopping: "bag",
         travel: "airplane",
         marketing: "megaphone",
-        utilities: "lightning",
       };
 
       return icons[category] || "credit-card";
