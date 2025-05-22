@@ -17,7 +17,15 @@
       </button>
     </div>
     <div v-if="activeTab === 'my-cards'">
-      <DebitCards />
+      <DebitCards 
+        v-for="card in userCards" 
+        :key="card.id"
+        :card-holder="card.cardHolder"
+        :card-number="card.maskedCardNumber"
+        :expiry-date="card.expiryDate"
+        :is-frozen="card.isFrozen"
+        :card-name="card.cardName"
+      />
     </div>
     <div v-else-if="activeTab === 'company-cards'">
       <div>All company cards content here</div>
@@ -28,8 +36,8 @@
 <script setup lang="ts">
 import { ref } from "vue";
 import DebitCards from "./debitCard.vue";
-
-const componentName = "CardDetails";
+import { mockCards } from "../../mock/cards";
 
 const activeTab = ref("my-cards");
+const userCards = ref(mockCards);
 </script>

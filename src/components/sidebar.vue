@@ -26,7 +26,7 @@
 </template>
 
 <script setup lang="ts">
-import { SidebarItem } from "../types/sidebar";
+import type { SidebarItem } from "../types/sidebar";
 import HomeIcon from "../icons/home.vue";
 import CardIcon from "../icons/card.vue";
 import PaymentsIcon from "../icons/payments.vue";

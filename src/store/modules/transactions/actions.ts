@@ -1,4 +1,4 @@
-import type { TransactionState, Transaction } from "./types";
+import type { Transaction } from "./types";
 import { mockTransactions } from "../../../mock/transactions";
 
 // Simulate API delay
